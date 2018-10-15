@@ -1,0 +1,255 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Ejcicios de Grimaldi}
+\author{AUTOR }
+\date{October 2018}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{color}
+\begin{document}
+\maketitle
+\section{Capitulo 5}Relaciones y funciones.\\
+1.  Si $\mu =N, A=(1,2,3,4), B=(2,5) y C=(3,4,7),$Determine AXB; BXA;\\
+\textcolor{red}{Respuesta:\\AXB:\\
+$
+\left(\begin{smallmatrix}
+(1,2),(1,5),(2,2),(2,5),(3,2),(3,5),(4,2),(4,5)
+\end{smallmatrix}\right)
+$\\
+BXA:\\
+$
+\left(\begin{smallmatrix}
+(2,1),(2,2),(2,3),(2,4),(5,1),(5,2),(5,3),(5,4)
+\end{smallmatrix}\right)
+$
+}\\
+2. Con los valores anteriores determine (AUB)XC\\
+\textcolor{red}{Respuesta:\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$
+}\\
+3. Determine (AXC)U(BXC) con los valores anteriores.\\
+\textcolor{red}{Respuesta:\\
+AXC:\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7)
+\end{smallmatrix}\right)
+$\\
+BXC:\\
+$
+\left(\begin{smallmatrix}
+(2,3),(2,4),(2,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$\\
+(AXC)U(BXC):\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$
+}
+4. Si $\mu = (1,2,3,4,5) , A=(1,2,3) y B=(2,4,5)$ de ejemplos de tres relaciones no vacías de A en B.\\
+\textcolor{red}{Respuesta:\\AXB:\\
+$
+\left(\begin{smallmatrix}
+(1,2),(1,4),(1,5)
+\end{smallmatrix}\right)
+$
+}\\
+5. Si $\mu = (1,2,3,4,5) , A=(1,2,3) y B=(2,4,5)$ de ejemplos de tres relaciones binarias no vacías en A.\\
+\textcolor{red}{Respuesta:\\
+$
+\left(\begin{smallmatrix}
+(1,1),(1,2),(1,3)
+\end{smallmatrix}\right)
+$
+}\\
+6. Sea $A=(1,2,4,8,16) y B=(1,2,3,4,5,6,7) si (2-x,5),(4,y-2) \epsilon AXB,$¿Se cumple que $(2-x,5)=(4,y-2)$?\\
+\textcolor{red}{Respuesta:\\se igualan las coordenadas\\$2-x=4 y 5=y-2\\2-4 , 5+2=y\\-2=x , 7=y;$ por lo tanto se cumple para $x=-2 y y=7$
+}\\
+7. Sea $A_1=(0,1,2,3,n),A_2=(1,2,3,7,12),A_3=(0,1,2,4,8,16,32) y A_4(-3,-2,-1,0,1,2,3)$\\Sea $R_1 \leq A_1 X A_2 X A_3 X A_4 donde R_1=(w,x,y,z)$ ¿Cuantos $4-uplas$ ordenadas o cuaternas hay en una relación?\\
+\textcolor{red}{Respuesta:\\$WXYZ= 0$ si y solo si por lo menos uno de los 4 números son 0, entonces se agarra los pares con una coordenada 0, por lo tanto el resultado es de $196+5(4)=216$
+}\\
+8. Sea $A_1=(0,1,2,3,n),A_2=(1,2,3,7,12),A_3=(0,1,2,4,8,16,32) y A_4(-3,-2,-1,0,1,2,3)$\\SI $2_2 \subset A_1 X A_2 X A_3 X A_4$ es la relación cuaternaria donde $(a,b,c,d \epsilon R_2)$ si x solo si abcd $\prec 0$ ¿Cuánto vale $R_2$\\
+\textcolor{red}{Respuesta:\\
+En este caso es similar al anterior como en el conjunto $A_4$ existe 3 números negativos entonces seria $72(4)=288$
+}\\
+9. Para cuales conjuntos A,B,C $\mu$ es verdadero $AXB=BXA$\\
+\textcolor{red}{Respuesta:\\
+$AXB=BXA si y solo si A=B$
+}\\
+10. Si $\mu=\re$, haya un esquema de la relación $((x,y) y x^2+y^2=4)$¿Qué sucede si U es $\re+$?\\
+\textcolor{red}{Respuesta:\\
+$x^2+y^2$ es una ecuación de la circunferencia con centro en el origen y radio de 2, por lo tanto se se toma los reales positivos, se generaría un semicírculo.
+}
+\section{Capitulo 6}Lenguajes: Máquinas de estados finitos.\\
+1. Sea A= (10,11), B(00,1) lenguajes para el alfabeto sumatoria = (0,1) determine lo siguiente:
+a) AB\\
+b) BA \\
+c) $A^3$\\
+d) $B^2$ \\ 
+\textcolor{red}{Respuesta:\\
+a) AB = (1000,101,1100,111)\\
+b) BA = (0010,0011,110,111) \\
+c) $A^3$ = (101010,101011,101110,111010,101111,111011,1111110,111111)\\
+d) $B^2$ = (0000,001,100,11)
+}\\
+2. Para el alfabeto sumatoria =(0,1), sean A, B, C $\subseteq$ sumatoria los siguientes lenguajes:
+A= (0, 1, 00, 11, 000, 111, 0000, 1111),\\
+B= (w $\in$ sumatoria 2 $\leq$ w)\\
+C= (w $\in$ sumatoria 2 $\geq$ w)
+Determine los siguientes subconjuntos(lenguajes) de sumatoria\\
+a) A $\cap$ B\\
+b) A - B \\
+c) A $\bigtriangleup$ B\\
+d) A $\cap$ C \\ 
+e) B $\cap$ C \\
+f) B $\cup$ C 
+\\
+\textcolor{red}{Respuesta:\\
+a) (00,111,000,111,0000,1111)\\
+b) (0,1) \\
+c) sumatoria* -($\lambda$,00,11,000,111,0000,1111)\\
+d) (0,1,00,11) \\ 
+e) sumatoria* \\
+f) sumatoria* - (0,1,00,11)= ($\lambda$,01,10) $\cup$ ( w $\geq$ 3 )
+}\\
+3. Sea sumatoria de (a, b, c, d, e)\\
+a) ¿Cuánto vale al cuadrado y al cubo \\b) ¿Cuántas cadenas de la sumatoria tienen una longitud de al menos cinco? \\ 
+\textcolor{red}{Respuesta(a):\\(a) sumatoria= (a, b, c, d, e) 
+son 5 letras, entonces $(5)^2= 25$; $(5)^3 = 125$ \\ 
+Respuesta(b):\\(b) De i = 0 hasta 5 es la sumatoria es 3906
+}\\
+4. Sea $sumatoria = {v, w, x, y, z}$ y $A= U^6 n=1$ $sumatoria ^n$. ¿Cuántas cadenas de A tienen a xy como prefijo propio? \\
+\textcolor{blue}{Respuesta:\\De $i=1$ hasta 4 es la $sumatoria 5^i$
+}\\
+5. Si x pertenece a la  sumatoria de longitudes y $x^3=36$, ¿Cuánto vale el valor absoluto de x? \\
+\textcolor{red}{ Respuesta:\\$x = 12$
+}\\
+6. Sea M= (S, F, O, v, w) una máquina de estados finitos con f= 0 = {0, 1} y S, v y w determinados por el diagrama de estados:\\
+ a) Encuentre la salida para la cadena de entrada x= 0110111011\\
+b) Si partimos del estado s0 y la salida para la cadena de entrada x es 0000001, determine todas las posibilidades para x.\\
+c) Describa con palabras lo que hace esta máquina de estados finitos.\\ 
+\textcolor{red}{Respuesta:\\ a) Salida= 0000000010\\	b) w=(x ,s0) = 0000001 para x=(1)11111101; (2) 1111011; (3) 1110111; (4) 1101111; (5) 10111111; y (6) 01111111\\		C) Organiza a ocurrencia de 6 en el valor de x
+}\\
+7.Una máquina de estados finitos $M= (S, F, O, v, w)$ tiene $F= 0 = [0, 1]$ y se determina mediante el diagrama de estados que se muestra:\\
+Determine la cadena de salida para para la cadena de entrada 110111, comenzando en S0. ¿Cuál es el último estado de transición?\\
+\textcolor{red}{Respuesta:\\010110}\\
+8. Para la sumatoria de (w, x, y, z)
+determine el número de cadenas de la  sumatoria de longitud cinco (a) que comienzan con w; (b) con precisamente dos w; (c) sin w; (d) con un numero par de w. \\
+\textcolor{red}{Respuesta:\\Consideremos que la sumatoria contiene 4 terminos:\\ (a) $4^4$ \\
+(b) $C(5,2)(3^3)$\\
+(c) $3^5$ \\
+(d) $3^5$ + $C(5,2)(3^3)$ + $C(5,4)(3)$
+}\\
+9. La máquina M tiene f= [0, 1] = 0 y se determina mediante el diagrama de estados.\\
+a) Describa con palabras lo que hace esta máquina de estados finitos\\ 
+b) ¿Qué debe recordar el estado s1?\\
+c) Encuentre dos lenguajes A, B  f* tales que para cada x  AB, w(s0, x) tiene a 1 como un sufijo\\
+\textcolor{red}{Respuesta:\\a) Reorganiza (Con una salida de 1) todos los 0 que le preceden de otro 0
+}\\
+10. Sea  sumatoria un alfabeto. Sea xi $\in$ sumatoria para  1 $\leq$ i $\leq$ 100 (donde xi es diferente que xj, para cualquier  1 $\leq$ j $\leq$ 100). ¿Cuántas sub-cadenas no vacías existen para la cadena $s= x1x2...x100$?  \\
+\textcolor{red}{Respuesta:\\Hay 100 sub-cadenas de longitud 1, 99 sub-cadenas de longitud 2, 1 sub-cadena de longitud 100, así que tenemos 100 + 99 + ...+ 1 = De i=1 hasta 100 sumatoria de i = (100)(101)/2 =5050 sub-cadenas no vacías en total
+}\\
+\section{Capitulo 7}Relaciones: La segunda vuelta.\\
+1. Proporcione la demostración de la inclusión del teorema $7.1$\\
+\textcolor{red}{Respuesta:\\$(a,b) E (R1 o R2) o R3 -> (a,c) E R1 o R2, (c,d) E R3 de algún c E C -> (a,b) E R1, (b,c) E R2, (c,d) E R3 de algún b E B, c E C -> (a,b) E R1,(b,d) E R2 o R3-> (a,d) E R1 o (R2 o R3), y (R1 o R2) o R3  R1 o (R2 o R3)$
+}\\
+2. Sea  A un conjunto tal que $|A|$ = n y sea $\Re$ una relación sobre A antisimétrica. ¿Cuál es el máximo valor de $|\Re|$ ? ¿Cuántas relaciones antisimétricas pueden tener ese tamaño?\\
+\textcolor{red}{Respuesta:\\El numero de antisimétricas relacionadas que puede tener son de tamaño $2^{(n^2-n)/2}$ 
+}\\
+3. Cuantas matrices (0, 1) de 6 x 6 cumplen que A=a?\\
+\textcolor{red}{Respuesta:\\Aquí las palomas son los enteros 2 + 1 entre 0 y 2, inclusivo, y los casilleros son las 2 relaciones en A
+}\\
+4. Sea n $\in$ Z con n $\succ$ 1y sea Aa el conjunto de los divisores enteros positivos de n. Defina la relación $\Re$ sobre A como x$\Re$y si x divide (exactamente) a y. Determine la cantidad de pares ordenados que hay en la relación de $\Re$ cuando n es (a) 10; (b) 20; (c) 40; (d) 200; (e) 210.\\
+\textcolor{red}{Respuesta:\\C significa combinación\\ 
+(a) C(3,2)*C(3,2) = 9\\ 
+(b) C(4,2)*C(3,2) = 18\\
+(c) C(5,2)*C(3,2) = 30\\
+(d) C(5,2)*C(4,2) = 60\\ 
+(e) C$(3,2)^4$ = 81
+}\\
+5. Si A $=$ (1,2,3,4), dé un ejemplo de una relación $\Re $ sobre A que sea\\
+a) reflexiva y simétrica, pero no transitiva\\
+b) reflexiva y transitiva, pero no simétrica \\
+c) simétrica y transitiva, pero no reflexiva\\
+\textcolor{red}{Respuesta: \\
+(a) [(1,1),(2,2),(3,3),(4,4),(1,2),(2,1),(2,3),(3,2)]\\ 
+(b) [(1,1),(2,2),(3,3),(4,4),(1,2)]\\
+(c) [(1,1),(2,2),(1,2),(2,1)]
+}\\
+6. Para la relación $\Re$ del ejemplo 1 inciso (c) determine:\\
+a) Tres elementos f1, f2, f3 $\Re$ $\Re$ tales que 1 $\leq$ i $\leq$ 3\\
+b) Encuentre tres términos g1, g2, g3 $\Re$ $\Re$ tales que 1 $\leq$ i $\leq$ 3\\
+\textcolor{red}{ Respuesta:\\
+(a) Dejar f1, f2, f3 $\in$ F con $f1(n) = n+1$, $f2(n) = 5n$, y $f3(n) = 4n +1/n$ \\
+(b) Dejar g1, g2, g3 $\in$ F con $g1(n) = 3$, $g2(n) = 1/n$, y $g3(n) = sin(n)$
+}\\
+7. Para la relación (b) del ejemplo anterior determine cinco valores de x para los cuales (x $\in$ $\Re $.\\
+\textcolor{red}{Respuesta:\\-9, -2, 5, 12, 19
+}\\
+8. Si R es una relación reflexiva sobre un conjunto A, demuestre que R2 también es reflexiva sobre A. \\
+\textcolor{red}{Respuesta:\\$x E A reflexiva.->(x,x) E R. (x,x) E R,(x,x) E R->(x,x) E R o R=R^2$
+}\\
+9. Sea A un conjunto tal que $|A|$ = n y sea $\Re$ una relación de equivalencia sobre A tal que $|\Re|$ = r ¿Por qué r-n siempre es par?\\
+\textcolor{red}{Respuesta:\\
+Cuenta los elementos en $\Re$ de la forma (a,b), a$\neq$ b. Como $\Re$ es simétrica, r-n es par
+}\\
+10. Para una relación R sobre un conjunto A, defina R0 = {a, a)|a  A}. Si |A| = n, demuestre que existen s, t N, con 0  s  t  2, tales que R = R.\\
+\textcolor{red}{Respuesta:\\R1 o (R2 n R3)= R2 o {m,3),(m,4)}={(1,3),(1,4)}
+(R1 o R2) n (R1 o R3)= {(1,3),(1,4)} n {(1,3),(1,4) n (1,3),(1,4)} = {(1,3),(1,4)}
+}\\
+\section{Capitulo 8}El principio de inclusión y exclusión.\\
+1.  Determine el numero de positivos n,$ 1\leq n\leq 2000$,tales que\\
+a) No son divisibles entre 2,3,5 \\b) No son divisibles entre 2,3,5 ni 7 \\c) No son divisibles entre 2,3,5, pero si son divísales entre 7 \\ 
+\textcolor{red}{Respuesta (a):\\$N(c1)=[2000/2]=100\\N(c2)=[2000/3]=666\\N(c3)=[2000/5]=400\\N(c4)=[2000/7]=285\\N(c1,c2)=[2000/6]=333
+\\N(c2,c3)=[2000/15]=133\\N(c1,c3)=[2000/10]=200\\N(c1,c2,c3)=[2000/30]=66\\N(c1,c2,c3)=200-[1000+666+400]+[333+200+133]-66\\N(c1,c2,c3)=534$\\ 
+Respuesta (b):\\$N(c1,c4)=[2000/14]=142\\N(c3,c4)=[2000/35]=57\\N(c2,c4)=[2000/21]=95\\N(c1,c2,c4)=[2000/42]=47\\N(c2,c3,c4)=[2000/105]=19
+\\N(c1,c2,c3,c4)=2000-[1000+600+400+271]+[333+200+133+142+57+95]-[66+47+19]+9=586$\\
+Respuesta (c):\\$N(c4)=1715$
+}\\
+2. ¿De cuantas formas se puede colocar todas las letras de la palabra information de tal manera que ningún par de letras consecutiva aparezca más de una vez?
+[Aqui queremos contar disposiciones como iinnoofrmta y fortmaiinon, pero no inforinmota(donde "n" aparece dos veces) o nortfnoiami(donde "no" aparece dos veces)]\\
+\textcolor{red}{Respuesta:\\$N(c1)=9!\\N(c2)=9!\\N(c1,c2)=7!\\N(c1,c2)=11!-[9!+9!]+7!$
+}
+\\
+3. Encuentre el número de enteros positivos x tales que $x\leq 9999999$ y la suma de los dígitos de x sea igual a 31\\
+\textcolor{red}{ Respuesta:\\Como la suma debe de dar 31, entonces nuestro primera condición es $(37/31)$, de esto cabe que son 4 números que suman 37, entonces los siguientes 3 condiciones queda que $s2=(7/1)(27/21), s3=(7/2)(17/11)=(7/3)(7/1)$, por lo tanto el resultado seria el siguiente\\$N(c1,c2,c3)=s1-s2-s3-s4=(37/31)-(7/1)(27/21)+(7/2)(17/11)-(7/3)(7/3)$
+}
+\\
+4. En su tienda de flores, Margarita desea colocar 15 plantas diferentes en cinco anaqueles del escaparate,¿De cuántas formas puede colocarlas de tal manera que cada anaquel tenga al menos una planta, pero más de cuatro?\\
+\textcolor{red}{Respuesta:\\Como se quiere pasar de cuatro, nuestra máximo de condicionales es 3, por lo tanto el procedimiento seria el siguiente\\
+$(5/0)(14/0)-(5/4)(10/6)+(5/1)(6/2) donde (s/n)$ es el numero de anaqueles y los $(14/10),(10/6),(6/2)$ es el restante de platas a colocar, por lo tanto se multiplica con el factorial de 15.\\$(15!)[(14/10)(5/0)-(5/1)(10/6)-(5/2)(6/2)]$
+}
+\\
+5. Encuentre el número de permutaciones de a,b,c......,x,y,z, de modo que no aparezcan los patrones spin, game, path o net.\\
+\textcolor{red}{Respuesta:\\El numero total de letras en el abecedario es de 26, entonces el procedimiento es el siguiente.\\
+$26!-[3(23!)+24!]+(20!+21!)$
+}
+\\
+6. Si se tiran ocho dados distintos,¿Cuál es la probabilidad de que aparezcan seis números distintos?\\
+\textcolor{red}{Respuesta:\\Son 8 tiros y 6 distintos.Esto se plantea de la siguiente manera.\\$[(6/0)6^8-(6/1)5^8+(6/2)4^8+(6/3)3^8+(6/2)2^8-(6/1)1^8+(6/0)0^8]/6^8$
+}
+\\
+7. Para la situación de los ejemplos 8.6 y 8.7.calcule E, para $0\leq 1 \leq 5$ y muestra que $\sum E=N=151$\\
+\textcolor{red}{Resultado:\\Para $F0=768; E1=205; E2=40; E3=10; E4=0; E5=1$\\Entonces $\sum Ei=768+205+40+10+0+1=1024=N$
+}
+\\
+8. ¿De cuántas formas podemos colocar , las letras de correspondientes de modo que (a) no haya un par de letras idénticas consecutivas?(b) haya exactamente dos pares de letra idénticas consecutivas?(c)haya menos tres pares de letras idénticas consecutivas?\\
+\textcolor{red}{Respuesta(a):\\$(5/0)[14!/2(2!)^5]-(5/1)[13!/(2!)^4+(5/2)[12!/(2!)^3]-(5/3)[11!/(2!)^2]+(5/4)[10!/2!]-(5/5)[9!]$\\Respuesta(b):\\$E2=(5/2)[12!/(2!)^3]-(3/1)(5/3)[11!/(2!)^2]+(4/4)(5/4)[10!/2!]-(5/3)(5/5)*[9!]$\\Respuesta(c):\\
+$L3=(5/3)[11!/(2!)^2]-(3/2)(5/4)[10!/2!]+(4/2)(5/5)[9!]$
+}
+\\
+9. a)¿De cuántas formas se puede distribuir diez premios distintos entre cuatro estudiantes de modo que exactamente dos estudiantes no reciban ninguno?b)¿De cuántas formas puede hacerse esto de modo que al menos dos estudiantes no reciban premio?\\
+\textcolor{red}{Resultado(a):\\$E2=(2/0)[101/(2!)^2]+(2/1)[9!/(2!)^1+(2/2)[8!/(2!)^0]=6132$\\Resultado(b):\\$E2=(2/0)[10!/(2!)^2]-(2/1)[9!/(2!)^1]+
+(2/2)[8!/(2!)^0]=6136$
+}
+\\
+10. ¿De cuantas formas se pueden colocar los enteros 1,2,3,...,10 en una linea de modo que ningún entero par quede en su posición natural?\\
+\textcolor{red}{Esto se restringe a 5 formas, ya que un entero n se puede recorrer a $n+1$ y sucesivamente, y partiendo de 1, entonces $n+1=2$, por lo tanto son pares, $[10/2]=5$, por lo tanto lo siguiente es determinar cuantas formas se colocan.\\$(5/0)10!-(5/1)9!+(5/2)8!-(5/3)7!+(5/4)6!-(5/5)5!$
+}
+\end{document}
